@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界公益日 | World Charity Day</title>
+    <meta name="description" content="響應世界公益日，傳遞溫暖，點亮希望。每一個微小的善舉，都能改變世界。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-decorations">
+        <div class="sparkle sparkle-1"></div>
+        <div class="sparkle sparkle-2"></div>
+        <div class="sparkle sparkle-3"></div>
+        <div class="sparkle sparkle-4"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-pink)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            Love & Care
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#about">關於公益日</a></li>
+            <li><a href="#action">參與行動</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="title">世界公益日</h1>
+                <p class="subtitle">World Charity Day</p>
+                <p class="description">傳遞溫暖，點亮希望。<br>每一個微小的善舉，都像是一顆種子，能在世界的某個角落綻放出美麗的花朵。</p>
+                <button class="cta-button">立即響應</button>
+            </div>
+            
+            <div class="hero-visuals">
+                <!-- Gentle Earth -->
+                <div class="floating-element earth-container">
+                    <svg class="earth-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="var(--earth-blue)"/>
+                        <!-- Continents -->
+                        <path d="M 20 40 Q 30 20 50 30 Q 40 50 20 60 Z" fill="var(--earth-green)"/>
+                        <path d="M 60 20 Q 80 15 85 35 Q 70 50 55 45 Z" fill="var(--earth-green)"/>
+                        <path d="M 55 65 Q 70 80 80 70 Q 75 55 65 55 Z" fill="var(--earth-green)"/>
+                        <!-- Cute Face -->
+                        <!-- closed eyes -->
+                        <path d="M 35 55 Q 40 60 45 55" stroke="var(--text-secondary)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M 55 55 Q 60 60 65 55" stroke="var(--text-secondary)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <!-- blush -->
+                        <circle cx="30" cy="62" r="4" fill="var(--accent-pink)" opacity="0.5"/>
+                        <circle cx="70" cy="62" r="4" fill="var(--accent-pink)" opacity="0.5"/>
+                        <!-- mouth -->
+                        <path d="M 45 65 Q 50 70 55 65" stroke="var(--text-secondary)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <!-- Heart Balloon -->
+                <div class="floating-element balloon-container" id="heart-balloon">
+                    <svg class="balloon-svg" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Balloon Envelope (Heart Shape) -->
+                        <path d="M 60 90 C 10 40, 20 10, 60 30 C 100 10, 110 40, 60 90 Z" fill="var(--accent-pink)"/>
+                        
+                        <!-- Ropes -->
+                        <line x1="45" y1="85" x2="50" y2="110" stroke="var(--text-secondary)" stroke-width="2"/>
+                        <line x1="75" y1="85" x2="70" y2="110" stroke="var(--text-secondary)" stroke-width="2"/>
+                        
+                        <!-- Basket -->
+                        <rect x="45" y="110" width="30" height="20" rx="3" fill="var(--tree-brown)"/>
+                        <rect x="45" y="110" width="30" height="4" fill="#8a6c5e"/>
+                        
+                        <!-- Care Package Symbol in basket -->
+                        <rect x="52" y="100" width="16" height="12" fill="var(--white)"/>
+                        <line x1="60" y1="100" x2="60" y2="112" stroke="var(--accent-pink)" stroke-width="2"/>
+                        <line x1="52" y1="106" x2="68" y2="106" stroke="var(--accent-pink)" stroke-width="2"/>
+                    </svg>
+                    
+                    <div class="speech-bubble">
+                        點擊熱氣球<br>送出一份愛心物資吧！💖
+                    </div>
+                </div>
+
+                <!-- Little Gardener -->
+                <div class="floating-element gardener-container">
+                    <svg class="gardener-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Ground -->
+                        <ellipse cx="50" cy="85" rx="35" ry="5" fill="#d2ccc4"/>
+                        
+                        <!-- Plant/Sapling -->
+                        <path d="M 70 85 Q 70 65 65 55" stroke="var(--leaf-green)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M 65 65 Q 60 60 65 55 Q 70 60 65 65 Z" fill="var(--leaf-green)"/>
+                        <path d="M 68 75 Q 75 70 73 65 Q 68 70 68 75 Z" fill="var(--leaf-green)"/>
+                        
+                        <!-- Watering Can -->
+                        <path d="M 45 65 L 55 65 L 52 75 L 48 75 Z" fill="#9dbfce"/>
+                        <path d="M 55 68 Q 62 60 65 65" stroke="#9dbfce" stroke-width="2" fill="none"/>
+                        <!-- Water drops -->
+                        <circle cx="63" cy="70" r="1" fill="#71a9c4"/>
+                        <circle cx="66" cy="73" r="1.5" fill="#71a9c4"/>
+                        <circle cx="61" cy="75" r="1" fill="#71a9c4"/>
+                        
+                        <!-- Character -->
+                        <!-- Body -->
+                        <path d="M 40 85 C 40 55, 20 55, 30 85 Z" fill="var(--accent-yellow)"/>
+                        <!-- Face -->
+                        <circle cx="35" cy="50" r="10" fill="var(--bg-color)"/> 
+                        <circle cx="32" cy="48" r="1.5" fill="var(--text-primary)"/>
+                        <circle cx="38" cy="48" r="1.5" fill="var(--text-primary)"/>
+                        <path d="M 33 53 Q 35 55 37 53" stroke="var(--text-primary)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        <!-- Hat -->
+                        <path d="M 20 42 Q 35 30 50 42 Z" fill="#e89595"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="action" class="features-section">
+            <div class="section-header">
+                <h2>散播愛心的三種方式</h2>
+                <p>選擇適合你的方式，一起加入公益行列</p>
+            </div>
+            <div class="glass-cards-container">
+                <div class="glass-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>志工服務</h3>
+                    <p>投入你的時間與技能，親身參與社區服務，為需要幫助的人帶來實質的改變與溫暖。</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">💝</div>
+                    <h3>愛心捐助</h3>
+                    <p>無論金額大小，您的每一分捐款或物資，都能轉化為支持弱勢群體度過難關的力量。</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🌱</div>
+                    <h3>環境永續</h3>
+                    <p>從日常生活做起，減少浪費、參與植樹或淨灘，為我們的地球母親盡一份心力。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Love & Care Initiative. 讓世界因你而更美好。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
