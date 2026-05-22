@@ -386,3 +386,30 @@ footer {
     .gardener-container { width: 140px; }
     .speech-bubble { right: -50px; top: -70px; }
 }
+
+/* Modal & Share Styles */
+.share-inline { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+.share-inline .cta-button { padding: 0.6rem 1rem; font-size: 0.9rem; border-radius: 12px; }
+.footer-share { display:flex; gap:0.5rem; justify-content:center; margin-top:0.5rem; }
+.footer-share button { background: transparent; border:1px solid rgba(0,0,0,0.06); padding:0.4rem .7rem; border-radius:8px; cursor:pointer; }
+
+.modal { position: fixed; inset: 0; display: grid; place-items: center; z-index: 9999; }
+.modal[hidden] { display: none; }
+.modal-overlay { position:absolute; inset:0; background: rgba(0,0,0,0.45); }
+.modal-content { position: relative; background: var(--white); border-radius: 12px; padding: 1.5rem; width: min(560px, 92%); box-shadow: 0 20px 40px rgba(0,0,0,0.12); z-index: 10; }
+.modal-close { position:absolute; right:12px; top:12px; background:transparent; border:none; font-size:1.1rem; cursor:pointer; }
+
+.modal-content h2 { margin-bottom:0.75rem; }
+.modal-content label { display:block; margin-top:0.75rem; font-weight:600; color:var(--text-secondary); }
+.modal-content input[type="text"], .modal-content input[type="number"], .modal-content textarea { width:100%; padding:0.6rem 0.75rem; margin-top:0.4rem; border-radius:8px; border:1px solid rgba(0,0,0,0.08); }
+.form-actions { display:flex; gap:0.75rem; margin-top:1rem; justify-content:flex-end; }
+.form-actions .cta-button { padding:0.6rem 1rem; border-radius:24px; }
+.thanks { text-align:center; padding:1rem 0.5rem; }
+
+/* Adjust floating-heart z-index so it appears above modal during celebration */
+.floating-heart { z-index: 10001; }
+
+@media (max-width: 480px) {
+    .share-inline { justify-content: center; }
+    .modal-content { padding: 1rem; }
+}

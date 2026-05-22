@@ -38,7 +38,14 @@
                 <h1 class="title">世界公益日</h1>
                 <p class="subtitle">World Charity Day</p>
                 <p class="description">傳遞溫暖，點亮希望。<br>每一個微小的善舉，都像是一顆種子，能在世界的某個角落綻放出美麗的花朵。</p>
-                <button class="cta-button">立即響應</button>
+                <button class="cta-button" id="open-donate" aria-haspopup="dialog">立即響應</button>
+
+                <div class="share-inline" aria-hidden="false">
+                    <button class="cta-button" id="share-facebook" aria-label="分享至 Facebook">分享 FB</button>
+                    <button class="cta-button" id="share-twitter" aria-label="分享至 Twitter">分享 TW</button>
+                    <button class="cta-button" id="share-line" aria-label="分享至 LINE">分享 LINE</button>
+                    <button class="cta-button" id="copy-link" aria-label="複製連結">複製連結</button>
+                </div>
             </div>
             
             <div class="hero-visuals">
@@ -148,7 +155,41 @@
 
     <footer>
         <p>&copy; 2026 Love & Care Initiative. 讓世界因你而更美好。</p>
+        <div class="footer-share" aria-label="分享連結">
+            <button id="share-footer-facebook">Facebook</button>
+            <button id="share-footer-twitter">Twitter</button>
+            <button id="share-footer-line">LINE</button>
+            <button id="share-footer-copy">複製連結</button>
+        </div>
     </footer>
+
+    <!-- Donate Modal -->
+    <div id="donate-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="donate-title" hidden>
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content" role="document">
+            <button class="modal-close" id="modal-close" aria-label="關閉捐款視窗">✕</button>
+            <h2 id="donate-title">捐款支持</h2>
+            <form id="donate-form" novalidate>
+                <label for="donor-name">姓名（選填）</label>
+                <input type="text" id="donor-name" name="name" placeholder="你的名字">
+
+                <label for="donation-amount">捐款金額（新台幣）</label>
+                <input type="number" id="donation-amount" name="amount" min="1" required aria-required="true" placeholder="100">
+
+                <label for="donor-message">留言（選填）</label>
+                <textarea id="donor-message" name="message" rows="3" placeholder="想留的話寫在這裡..."></textarea>
+
+                <div class="form-actions">
+                    <button type="submit" class="cta-button">送出捐款（模擬）</button>
+                    <button type="button" id="modal-cancel" class="cta-button">取消</button>
+                </div>
+            </form>
+            <div id="donate-thanks" class="thanks" hidden>
+                <h3>感謝您的支持！</h3>
+                <p>您的善心會被妥善運用。</p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
