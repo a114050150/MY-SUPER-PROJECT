@@ -3,194 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>世界公益日 | World Charity Day</title>
-    <meta name="description" content="響應世界公益日，傳遞溫暖，點亮希望。每一個微小的善舉，都能改變世界。">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>遇見希臘神殿——奇美博物館導覽</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-decorations">
-        <div class="sparkle sparkle-1"></div>
-        <div class="sparkle sparkle-2"></div>
-        <div class="sparkle sparkle-3"></div>
-        <div class="sparkle sparkle-4"></div>
-    </div>
 
-    <nav class="navbar">
-        <div class="logo">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-pink)" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-            </svg>
-            Love & Care
+    <header class="hero">
+        <div class="hero-text">
+            <h1>奇美博物館</h1>
+            <p>走向西方的藝術殿堂，一場穿越時空的文化盛宴</p>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">首頁</a></li>
-            <li><a href="#about">關於公益日</a></li>
-            <li><a href="#action">參與行動</a></li>
-        </ul>
-    </nav>
+    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="title">世界公益日</h1>
-                <p class="subtitle">World Charity Day</p>
-                <p class="description">傳遞溫暖，點亮希望。<br>每一個微小的善舉，都像是一顆種子，能在世界的某個角落綻放出美麗的花朵。</p>
-                <button class="cta-button" id="open-donate" aria-haspopup="dialog">立即響應</button>
-
-                <div class="share-inline" aria-hidden="false">
-                    <button class="cta-button" id="share-facebook" aria-label="分享至 Facebook">分享 FB</button>
-                    <button class="cta-button" id="share-twitter" aria-label="分享至 Twitter">分享 TW</button>
-                    <button class="cta-button" id="share-line" aria-label="分享至 LINE">分享 LINE</button>
-                    <button class="cta-button" id="copy-link" aria-label="複製連結">複製連結</button>
-                </div>
-            </div>
-            
-            <div class="hero-visuals">
-                <!-- Gentle Earth -->
-                <div class="floating-element earth-container">
-                    <svg class="earth-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="50" cy="50" r="45" fill="var(--earth-blue)"/>
-                        <!-- Continents -->
-                        <path d="M 20 40 Q 30 20 50 30 Q 40 50 20 60 Z" fill="var(--earth-green)"/>
-                        <path d="M 60 20 Q 80 15 85 35 Q 70 50 55 45 Z" fill="var(--earth-green)"/>
-                        <path d="M 55 65 Q 70 80 80 70 Q 75 55 65 55 Z" fill="var(--earth-green)"/>
-                        <!-- Cute Face -->
-                        <!-- closed eyes -->
-                        <path d="M 35 55 Q 40 60 45 55" stroke="var(--text-secondary)" stroke-width="2" fill="none" stroke-linecap="round"/>
-                        <path d="M 55 55 Q 60 60 65 55" stroke="var(--text-secondary)" stroke-width="2" fill="none" stroke-linecap="round"/>
-                        <!-- blush -->
-                        <circle cx="30" cy="62" r="4" fill="var(--accent-pink)" opacity="0.5"/>
-                        <circle cx="70" cy="62" r="4" fill="var(--accent-pink)" opacity="0.5"/>
-                        <!-- mouth -->
-                        <path d="M 45 65 Q 50 70 55 65" stroke="var(--text-secondary)" stroke-width="2" fill="none" stroke-linecap="round"/>
-                    </svg>
-                </div>
-
-                <!-- Heart Balloon -->
-                <div class="floating-element balloon-container" id="heart-balloon">
-                    <svg class="balloon-svg" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Balloon Envelope (Heart Shape) -->
-                        <path d="M 60 90 C 10 40, 20 10, 60 30 C 100 10, 110 40, 60 90 Z" fill="var(--accent-pink)"/>
-                        
-                        <!-- Ropes -->
-                        <line x1="45" y1="85" x2="50" y2="110" stroke="var(--text-secondary)" stroke-width="2"/>
-                        <line x1="75" y1="85" x2="70" y2="110" stroke="var(--text-secondary)" stroke-width="2"/>
-                        
-                        <!-- Basket -->
-                        <rect x="45" y="110" width="30" height="20" rx="3" fill="var(--tree-brown)"/>
-                        <rect x="45" y="110" width="30" height="4" fill="#8a6c5e"/>
-                        
-                        <!-- Care Package Symbol in basket -->
-                        <rect x="52" y="100" width="16" height="12" fill="var(--white)"/>
-                        <line x1="60" y1="100" x2="60" y2="112" stroke="var(--accent-pink)" stroke-width="2"/>
-                        <line x1="52" y1="106" x2="68" y2="106" stroke="var(--accent-pink)" stroke-width="2"/>
-                    </svg>
-                    
-                    <div class="speech-bubble">
-                        點擊熱氣球<br>送出一份愛心物資吧！💖
-                    </div>
-                </div>
-
-                <!-- Little Gardener -->
-                <div class="floating-element gardener-container">
-                    <svg class="gardener-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Ground -->
-                        <ellipse cx="50" cy="85" rx="35" ry="5" fill="#d2ccc4"/>
-                        
-                        <!-- Plant/Sapling -->
-                        <path d="M 70 85 Q 70 65 65 55" stroke="var(--leaf-green)" stroke-width="3" fill="none" stroke-linecap="round"/>
-                        <path d="M 65 65 Q 60 60 65 55 Q 70 60 65 65 Z" fill="var(--leaf-green)"/>
-                        <path d="M 68 75 Q 75 70 73 65 Q 68 70 68 75 Z" fill="var(--leaf-green)"/>
-                        
-                        <!-- Watering Can -->
-                        <path d="M 45 65 L 55 65 L 52 75 L 48 75 Z" fill="#9dbfce"/>
-                        <path d="M 55 68 Q 62 60 65 65" stroke="#9dbfce" stroke-width="2" fill="none"/>
-                        <!-- Water drops -->
-                        <circle cx="63" cy="70" r="1" fill="#71a9c4"/>
-                        <circle cx="66" cy="73" r="1.5" fill="#71a9c4"/>
-                        <circle cx="61" cy="75" r="1" fill="#71a9c4"/>
-                        
-                        <!-- Character -->
-                        <!-- Body -->
-                        <path d="M 40 85 C 40 55, 20 55, 30 85 Z" fill="var(--accent-yellow)"/>
-                        <!-- Face -->
-                        <circle cx="35" cy="50" r="10" fill="var(--bg-color)"/> 
-                        <circle cx="32" cy="48" r="1.5" fill="var(--text-primary)"/>
-                        <circle cx="38" cy="48" r="1.5" fill="var(--text-primary)"/>
-                        <path d="M 33 53 Q 35 55 37 53" stroke="var(--text-primary)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-                        <!-- Hat -->
-                        <path d="M 20 42 Q 35 30 50 42 Z" fill="#e89595"/>
-                    </svg>
-                </div>
-            </div>
+    <main class="container">
+        <section class="intro">
+            <h2>關於博物館</h2>
+            <p>位於台灣台南市仁德區的奇美博物館，由奇美實業創辦人許文龍先生創立。其建築外觀呈現濃厚的西洋古典美學，前方壯麗的「阿波羅噴泉」與「奧林帕斯橋」更是造訪時絕不可錯過的經典地標。</p>
         </section>
 
-        <section id="action" class="features-section">
-            <div class="section-header">
-                <h2>散播愛心的三種方式</h2>
-                <p>選擇適合你的方式，一起加入公益行列</p>
-            </div>
-            <div class="glass-cards-container">
-                <div class="glass-card">
-                    <div class="card-icon">🤝</div>
-                    <h3>志工服務</h3>
-                    <p>投入你的時間與技能，親身參與社區服務，為需要幫助的人帶來實質的改變與溫暖。</p>
+        <section class="features">
+            <h2>四大必看館藏</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>西洋藝術</h3>
+                    <p>收藏了13至20世紀的西洋繪畫與雕塑，讓你彷彿置身歐洲美術館。</p>
                 </div>
-                <div class="glass-card">
-                    <div class="card-icon">💝</div>
-                    <h3>愛心捐助</h3>
-                    <p>無論金額大小，您的每一分捐款或物資，都能轉化為支持弱勢群體度過難關的力量。</p>
+                <div class="card">
+                    <h3>兵器領域</h3>
+                    <p>展示來自亞洲、歐洲等世界各地的古老兵器，呈現工藝與歷史的結合。</p>
                 </div>
-                <div class="glass-card">
-                    <div class="card-icon">🌱</div>
-                    <h3>環境永續</h3>
-                    <p>從日常生活做起，減少浪費、參與植樹或淨灘，為我們的地球母親盡一份心力。</p>
+                <div class="card">
+                    <h3>自然史</h3>
+                    <p>擁有規模龐大的動物標本與化石收藏，極具教育意義與震撼力。</p>
+                </div>
+                <div class="card">
+                    <h3>樂器收藏</h3>
+                    <p>全球最完整的小提琴收藏之一，甚至包含多把史特拉底瓦里名琴。</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Love & Care Initiative. 讓世界因你而更美好。</p>
-        <div class="footer-share" aria-label="分享連結">
-            <button id="share-footer-facebook">Facebook</button>
-            <button id="share-footer-twitter">Twitter</button>
-            <button id="share-footer-line">LINE</button>
-            <button id="share-footer-copy">複製連結</button>
-        </div>
+        <p>&copy; 2026 奇美博物館網頁導覽專案。共享美麗的藝術世界。</p>
     </footer>
 
-    <!-- Donate Modal -->
-    <div id="donate-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="donate-title" hidden>
-        <div class="modal-overlay" id="modal-overlay"></div>
-        <div class="modal-content" role="document">
-            <button class="modal-close" id="modal-close" aria-label="關閉捐款視窗">✕</button>
-            <h2 id="donate-title">捐款支持</h2>
-            <form id="donate-form" novalidate>
-                <label for="donor-name">姓名（選填）</label>
-                <input type="text" id="donor-name" name="name" placeholder="你的名字">
-
-                <label for="donation-amount">捐款金額（新台幣）</label>
-                <input type="number" id="donation-amount" name="amount" min="1" required aria-required="true" placeholder="100">
-
-                <label for="donor-message">留言（選填）</label>
-                <textarea id="donor-message" name="message" rows="3" placeholder="想留的話寫在這裡..."></textarea>
-
-                <div class="form-actions">
-                    <button type="submit" class="cta-button">送出捐款（模擬）</button>
-                    <button type="button" id="modal-cancel" class="cta-button">取消</button>
-                </div>
-            </form>
-            <div id="donate-thanks" class="thanks" hidden>
-                <h3>感謝您的支持！</h3>
-                <p>您的善心會被妥善運用。</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
+
